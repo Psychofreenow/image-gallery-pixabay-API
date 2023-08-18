@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: rgb(10, 10, 75);
+	/* outline: 1px solid rgb(205, 50, 50) !important; */
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+}
