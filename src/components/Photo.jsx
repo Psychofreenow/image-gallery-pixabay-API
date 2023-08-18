@@ -7,12 +7,12 @@ function Photo({ elements }) {
 	return (
 		<>
 			<div className='w-40 h-40'>
-				<img
+				<LazyLoadImage
 					src={webformatURL}
 					alt={`This image represents the following tags: ${tags}`}
 					className='w-40 h-40 object-cover'
-					// effect='blur'
-					// placeholderSrc={PlaceholderImage}
+					effect='blur'
+					placeholderSrc={PlaceholderImage}
 				/>
 			</div>
 		</>

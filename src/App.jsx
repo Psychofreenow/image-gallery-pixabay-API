@@ -5,9 +5,6 @@ function App() {
 	return (
 		<>
 			<Gallery />
-
-			{console.log('hola')}
-			{console.log('adios')}
 		</>
 	);
 }
