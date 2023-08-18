@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-API_KEY
+API_KEY.js
 
 node_modules
 dist
