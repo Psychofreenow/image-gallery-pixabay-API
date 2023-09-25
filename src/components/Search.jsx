@@ -1,34 +1,26 @@
 import { useState } from 'react';
-import { useInfinitePagesFullData } from '../context/InfinitePagesContext';
 
-function Search() {
-	const { updateSearch } = useInfinitePagesFullData();
+function Search({ setDataSearch }) {
 	const [searchBar, setSearchBar] = useState('');
 
 	const handleSubmit = e => {
 		e.preventDefault();
-		updateSearch(searchBar);
+		setDataSearch(searchBar);
 	};
 
 	const handleChange = e => {
 		setSearchBar(e.target.value);
 	};
 
-	console.log(searchBar);
-
 	return (
-		<form
-			action=''
-			className='container flex justify-center'
-			onSubmit={handleSubmit}
-		>
+		<form action='' onSubmit={handleSubmit}>
 			<input
 				type='text'
-				className='border-white border-solid border-2 text-white'
+				className='border-white border-solid border-2 text-white p-3'
 				value={searchBar}
 				onChange={handleChange}
 			/>
-			<button className='text-black bg-white p-4 rounded-full'>BUSCAR</button>°
+			<button className='text-black bg-white p-4 rounded-full'>BUSCAR</button>
 		</form>
 	);
 }

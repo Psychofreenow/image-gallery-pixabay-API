@@ -6,12 +6,14 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-API_KEY.js
+
 
 node_modules
 dist
 dist-ssr
 *.local
+API_KEY.js
+
 
 # Editor directories and files
 .vscode/*
