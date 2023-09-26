@@ -6,5 +6,3 @@
 -hacerlo responsing usando twailwind (aprenderlo)
 
 Investigar: hot reloding
-
-probar useContext para ver si el comportamiento deja de ser esa manera

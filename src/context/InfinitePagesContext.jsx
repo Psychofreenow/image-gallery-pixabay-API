@@ -41,8 +41,8 @@ export function InfinitePagesContext({ children }) {
 		setInfinitePages([]);
 	};
 
-	if (loading) return <div>Cargando...</div>;
-	if (error) return <div>Error: {error.message}</div>;
+	if (loading) return <div className='text-white'>Cargando...</div>;
+	if (error) return <div className='text-white'>Error: {error.message}</div>;
 
 	return (
 		<pages.Provider
