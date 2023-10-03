@@ -23,13 +23,19 @@ function Gallery() {
 		<>
 			<main className='container m-auto'>
 				<header className='p-5 flex justify-center items-center gap-4'>
-					<Search setDataSearch={setDataSearch} />
+					<Search
+						setDataSearch={setDataSearch}
+						dataFilterCategory={dataFilterCategory}
+					/>
 					<FilterCategory setDataFilterCategory={setDataFilterCategory} />
 					<FilterLang changeLang={changeLang} />
 				</header>
 				<div className='container flex flex-wrap justify-center gap-2'>
-					{infinitePages &&
-						infinitePages.map(el => <Photo key={el.id} elements={el} />)}
+					{infinitePages.length === 0 ? (
+						<span className='text-rose-500 p-4'>No hay resultados</span>
+					) : (
+						infinitePages.map(el => <Photo key={el.id} elements={el} />)
+					)}
 				</div>
 				<div className='container flex justify-center gap-5'>
 					<Button onClick={handleLoadMore}>CARGAR MÁS RESULTADOS</Button>

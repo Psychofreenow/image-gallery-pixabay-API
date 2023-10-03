@@ -11,7 +11,7 @@ function FilterLang({ changeLang }) {
 
 	return (
 		<label htmlFor='lang' className='text-white'>
-			Selecciona un idioma:
+			Selecciona el idioma de busqueda:
 			<select
 				name='selectLang'
 				id='lang'
